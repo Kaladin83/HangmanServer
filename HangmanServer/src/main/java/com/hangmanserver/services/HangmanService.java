@@ -50,6 +50,7 @@ public class HangmanService {
 	}
 	
 	private boolean getNewResult() {
+		resultWord = "";
 		for (int i = 0; i < chosenWord.length(); i++) {
 			resultWord += chosenWord.charAt(i) == '-'? '-': "_";		
 		}
